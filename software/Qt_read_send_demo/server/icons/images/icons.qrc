@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>copy.png</file>
+        <file>cut.png</file>
+        <file>icons.qrc</file>
+        <file>new.png</file>
+        <file>open.png</file>
+        <file>paste.png</file>
+        <file>quit.png</file>
+        <file>save.png</file>
+        <file>ellipse.png</file>
+        <file>rectangle.png</file>
+        <file>select.png</file>
+        <file>line.png</file>
+        <file>polyline.png</file>
+        <file>polygon.png</file>
+        <file>tiantan.jpg</file>
+    </qresource>
+</RCC>

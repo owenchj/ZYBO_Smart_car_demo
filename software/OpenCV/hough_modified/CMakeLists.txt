@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(houghcircles)
+find_package(OpenCV REQUIRED)
+add_executable(houghcircles houghcircles)
+target_link_libraries(houghcircles ${OpenCV_LIBS})
