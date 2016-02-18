@@ -1,7 +1,7 @@
 # Smart_car_demo_PRIM_ENST
 In this project, we will use the platform ZYBO based on Linux for controling a small car.
 We will use the following componantes. <br />
-Bluetooth       : send some command <br />
+Bluetooth       : send commands <br />
 OV7725          : CMOS camera <br />
 Ultrason        : detecte the obstacle <br />
 ZYBO            : plateform for image processing <br />
