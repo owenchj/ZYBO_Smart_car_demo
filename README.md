@@ -8,4 +8,4 @@ ZYBO            : plateform for image processing <br />
 Wifi(DWA-131)   : send image to smartphone <br />
 Speed detection : 
 
-![Alt text](https://github.com/owenchj/Smart_car_demo_PRIM_ENST/blob/master/smart_car_demo.jpg =100x20 "Optional title"  )
+![Alt text](https://github.com/owenchj/Smart_car_demo_PRIM_ENST/blob/master/smart_car_demo.jpg "Optional title"  ){: width=200px}
