@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="sobel" xd:componentRef="sobel" xd:initiationInterval="2083094" xd:clockPeriod="40.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="video_in.data" xd:originalName="video_in" xd:direction="in" xd:interfaceRef="video_in" xd:busTypeRef="axis" xd:dataWidth="24"/>
+  <xd:arg xd:name="video_in.keep" xd:originalName="video_in" xd:direction="in" xd:interfaceRef="video_in" xd:busTypeRef="axis" xd:dataWidth="3"/>
+  <xd:arg xd:name="video_in.strb" xd:originalName="video_in" xd:direction="in" xd:interfaceRef="video_in" xd:busTypeRef="axis" xd:dataWidth="3"/>
+  <xd:arg xd:name="video_in.user" xd:originalName="video_in" xd:direction="in" xd:interfaceRef="video_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_in.last" xd:originalName="video_in" xd:direction="in" xd:interfaceRef="video_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_in.id" xd:originalName="video_in" xd:direction="in" xd:interfaceRef="video_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_in.dest" xd:originalName="video_in" xd:direction="in" xd:interfaceRef="video_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_out.data" xd:originalName="video_out" xd:direction="out" xd:interfaceRef="video_out" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="video_out.keep" xd:originalName="video_out" xd:direction="out" xd:interfaceRef="video_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_out.strb" xd:originalName="video_out" xd:direction="out" xd:interfaceRef="video_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_out.user" xd:originalName="video_out" xd:direction="out" xd:interfaceRef="video_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_out.last" xd:originalName="video_out" xd:direction="out" xd:interfaceRef="video_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_out.id" xd:originalName="video_out" xd:direction="out" xd:interfaceRef="video_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_out.dest" xd:originalName="video_out" xd:direction="out" xd:interfaceRef="video_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="rows" xd:originalName="rows" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="cols" xd:originalName="cols" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="C_XR0C0" xd:originalName="C_XR0C0" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x20" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="C_XR0C1" xd:originalName="C_XR0C1" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x28" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="C_XR0C2" xd:originalName="C_XR0C2" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x30" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="C_XR1C0" xd:originalName="C_XR1C0" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x38" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="C_XR1C1" xd:originalName="C_XR1C1" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x40" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="C_XR1C2" xd:originalName="C_XR1C2" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x48" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="C_XR2C0" xd:originalName="C_XR2C0" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x50" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="C_XR2C1" xd:originalName="C_XR2C1" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x58" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="C_XR2C2" xd:originalName="C_XR2C2" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x60" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="C_YR0C0" xd:originalName="C_YR0C0" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x68" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="C_YR0C1" xd:originalName="C_YR0C1" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x70" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="C_YR0C2" xd:originalName="C_YR0C2" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x78" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="C_YR1C0" xd:originalName="C_YR1C0" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x80" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="C_YR1C1" xd:originalName="C_YR1C1" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x88" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="C_YR1C2" xd:originalName="C_YR1C2" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x90" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="C_YR2C0" xd:originalName="C_YR2C0" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x98" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="C_YR2C1" xd:originalName="C_YR2C1" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0xA0" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="C_YR2C2" xd:originalName="C_YR2C2" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0xA8" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="c_high_thresh" xd:originalName="c_high_thresh" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0xB0" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="c_low_thresh" xd:originalName="c_low_thresh" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0xB8" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="c_invert" xd:originalName="c_invert" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0xC0" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="threshold" xd:originalName="threshold" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0xC8" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="194" xd:worst-case="2083093" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="5367" xd:FF="2850" xd:BRAM="12" xd:DSP="31"/>
+</xd:acceleratorMap>

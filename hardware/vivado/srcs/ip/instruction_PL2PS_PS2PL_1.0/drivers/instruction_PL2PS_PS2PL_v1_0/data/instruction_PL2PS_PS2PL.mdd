@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER instruction_PL2PS_PS2PL
+	OPTION supported_peripherals = (instruction_PL2PS_PS2PL);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = instruction_PL2PS_PS2PL;
+END DRIVER
